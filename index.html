@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>rick and morty</title>
+</head>
+<header>
+    <h1>Rick and Morty</h1>
+    <input id="search" type="text" placeholder="Find a character">
+</header>
+<body>
+    <section id="card"></section>
+    <button id="button">More Characters</button>
+    <template id="template">
+        <article class="card">
+            <div class="imgDad">
+                <img src="./images.jpg" alt="" id="image">
+            </div>
+            <div class="info">
+                <h1 id="name" class="hoover">Name</h1>
+                <div id="statusAndSpecie"><h4 id="status">Status</h4> -  <h4 id="specie">Specie</h4></div>
+                <span><h5>Last known location:</h5></span>
+                <h4 id="location" class="hoover">Location</h4>
+                <span><h5>First seen</h5></span>
+                <h4 class="hoover">seen</h4>
+            </div>
+        </article>
+    </template>
+    <script src="./fetchApi.js"></script>
+</body>
+</html>
